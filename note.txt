@@ -1,0 +1,25 @@
+Done. .vsix built.
+
+  Hasil
+
+  Folder project:
+  D:\KERJA\PT Ardikea\Kerjaan\code_fathan\aproject-vscode\my-vscode-extension-pack
+
+  File .vsix:
+  D:\KERJA\PT Ardikea\Kerjaan\code_fathan\aproject-vscode\my-vscode-extension-pack\my-vscode-extension-pack-0.0.1.vsix
+
+  Install manual di mesin lain:
+  code --install-extension "my-vscode-extension-pack-0.0.1.vsix"
+
+  Regenerate daftar extension (saat tambah extension baru):
+  cd "D:\KERJA\PT Ardikea\Kerjaan\code_fathan\aproject-vscode\my-vscode-extension-pack"
+  node scripts/regen-pack.js
+  # bump "version" di package.json
+  npx @vscode/vsce package
+
+  Catatan
+
+  - Warning repository + LICENSE aman diabaikan untuk pemakaian pribadi. Jika mau bersih: tambah field "repository" di
+  package.json + buat file LICENSE.
+  - Total 122 extension masuk pack.
+  - publisher: my-personal-pack cuma untuk local install. Ganti ke nama publisher resmi sebelum publish ke Marketplace.
